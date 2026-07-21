@@ -1,4 +1,4 @@
-name: Deploy Pathogen Intelligence Pages v17.1
+name: Deploy Pathogen Intelligence Pages v17.2
 
 on:
   push:
