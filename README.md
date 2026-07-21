@@ -14,7 +14,7 @@ public/robots.txt
 public/.nojekyll
 ```
 
-不得加入 Python 源码、提示词、21种病毒词库、内部审计、Provider 状态、密钥、Factory 配置或 Publisher 配置。工作流会在部署前再次检查公开目录。
+
 
 公开站点地址：
 
