@@ -1,0 +1,152 @@
+[
+  {
+    "profile_id": "sars_cov_2",
+    "name_zh": "SARS-CoV-2",
+    "name_en": "Severe acute respiratory syndrome coronavirus 2",
+    "issue_date": "2026-07-21",
+    "papers": 50,
+    "news": 37,
+    "day": "monday",
+    "cover": "profiles/sars_cov_2/assets/cover.jpg"
+  },
+  {
+    "profile_id": "mpox_virus",
+    "name_zh": "猴痘病毒（Mpox病毒）",
+    "name_en": "Mpox virus",
+    "issue_date": "2026-07-21",
+    "papers": 16,
+    "news": 7,
+    "day": "monday",
+    "cover": "profiles/mpox_virus/assets/cover.jpg"
+  },
+  {
+    "profile_id": "marburg_virus",
+    "name_zh": "马尔堡病毒",
+    "name_en": "Marburg virus",
+    "issue_date": "2026-07-21",
+    "papers": 1,
+    "news": 0,
+    "day": "monday",
+    "cover": "profiles/marburg_virus/assets/cover.jpg"
+  },
+  {
+    "profile_id": "seasonal_influenza",
+    "name_zh": "季节性流感病毒",
+    "name_en": "Seasonal influenza viruses",
+    "issue_date": "2026-07-21",
+    "papers": 19,
+    "news": 1,
+    "day": "tuesday",
+    "cover": "profiles/seasonal_influenza/assets/cover.jpg"
+  },
+  {
+    "profile_id": "chikungunya_virus",
+    "name_zh": "基孔肯雅病毒",
+    "name_en": "Chikungunya virus",
+    "issue_date": "2026-07-21",
+    "papers": 11,
+    "news": 5,
+    "day": "tuesday",
+    "cover": "profiles/chikungunya_virus/assets/cover.jpg"
+  },
+  {
+    "profile_id": "nipah_virus",
+    "name_zh": "尼帕病毒",
+    "name_en": "Nipah virus",
+    "issue_date": "2026-07-21",
+    "papers": 9,
+    "news": 2,
+    "day": "tuesday",
+    "cover": "profiles/nipah_virus/assets/cover.jpg"
+  },
+  {
+    "profile_id": "respiratory_syncytial_virus",
+    "name_zh": "呼吸道合胞病毒",
+    "name_en": "Respiratory syncytial virus",
+    "issue_date": "2026-07-21",
+    "papers": 36,
+    "news": 6,
+    "day": "wednesday",
+    "cover": "profiles/respiratory_syncytial_virus/assets/cover.jpg"
+  },
+  {
+    "profile_id": "norovirus",
+    "name_zh": "诺如病毒",
+    "name_en": "Norovirus",
+    "issue_date": "2026-07-21",
+    "papers": 9,
+    "news": 6,
+    "day": "wednesday",
+    "cover": "profiles/norovirus/assets/cover.jpg"
+  },
+  {
+    "profile_id": "ebola_viruses",
+    "name_zh": "埃博拉病毒类群",
+    "name_en": "Ebola viruses",
+    "issue_date": "2026-07-21",
+    "papers": 13,
+    "news": 12,
+    "day": "wednesday",
+    "cover": "profiles/ebola_viruses/assets/cover.jpg"
+  },
+  {
+    "profile_id": "dengue_virus",
+    "name_zh": "登革病毒",
+    "name_en": "Dengue virus",
+    "issue_date": "2026-07-21",
+    "papers": 50,
+    "news": 44,
+    "day": "thursday",
+    "cover": "profiles/dengue_virus/assets/cover.jpg"
+  },
+  {
+    "profile_id": "human_metapneumovirus",
+    "name_zh": "人偏肺病毒",
+    "name_en": "Human metapneumovirus",
+    "issue_date": "2026-07-21",
+    "papers": 5,
+    "news": 0,
+    "day": "thursday",
+    "cover": "profiles/human_metapneumovirus/assets/cover.jpg"
+  },
+  {
+    "profile_id": "sftsv",
+    "name_zh": "发热伴血小板减少综合征病毒",
+    "name_en": "Severe fever with thrombocytopenia syndrome virus",
+    "issue_date": "2026-07-21",
+    "papers": 3,
+    "news": 0,
+    "day": "thursday",
+    "cover": "profiles/sftsv/assets/cover.jpg"
+  },
+  {
+    "profile_id": "hepatitis_b_virus",
+    "name_zh": "乙型肝炎病毒",
+    "name_en": "Hepatitis B virus",
+    "issue_date": "2026-07-21",
+    "papers": 50,
+    "news": 10,
+    "day": "friday",
+    "cover": "profiles/hepatitis_b_virus/assets/cover.jpg"
+  },
+  {
+    "profile_id": "hantavirus",
+    "name_zh": "汉坦病毒",
+    "name_en": "Hantaviruses",
+    "issue_date": "2026-07-19",
+    "papers": 17,
+    "news": 16,
+    "day": "friday",
+    "cover": "profiles/hantavirus/assets/cover.jpg"
+  },
+  {
+    "profile_id": "rabies_virus",
+    "name_zh": "狂犬病病毒",
+    "name_en": "Rabies virus",
+    "issue_date": "2026-07-19",
+    "papers": 16,
+    "news": 45,
+    "day": "sunday",
+    "cover": "profiles/rabies_virus/assets/cover.jpg"
+  }
+]
