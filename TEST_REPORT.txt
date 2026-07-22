@@ -1,12 +1,6 @@
-Pathogen Intelligence Pages v17.2 验证报告
-
-公开仓静态白名单                  PASS
-源码/词库/审计/密钥拒绝规则        PASS
-合法多语种标题元数据兼容           PASS
-configure-pages@v5                PASS
-upload-pages-artifact@v4          PASS
-deploy-pages@v4                   PASS
-Workflow YAML                     PASS
-Factory同步边界                   PASS
-
-FINAL_RELEASE=PASS
+Pathogen Intelligence Pages v17.4 验证报告
+- 公开仓仅保存静态白名单：PASS
+- deploy-pages工作流YAML：PASS
+- 相关非目标补充卡范围说明：PASS
+- 补充卡无摘要/五七要素深度越界：PASS
+- 多语种原始标题元数据审计：PASS
