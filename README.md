@@ -1,7 +1,3 @@
-# Pathogen Intelligence Pages v17.4-r2.1
+# Pathogen Intelligence Pages v17.4-r3
 
-公开静态仓，只接收Factory生成并通过公开白名单检查的站点树。仓库不保存Factory源码、API密钥、原始私有审计、公众号密钥、Runner配置或发布状态。
-
-部署工作流：`.github/workflows/deploy-pages.yml`。
-
-网页正文由Factory生成；v17.4-r2.1会在发布前清除后台复核措辞，并通过HTML审计禁止“审查得出的结论是”“范围说明”等处理过程文本进入公开页面。
+本仓库只保存 Factory 生成的公开静态站点及自身 `deploy-pages.yml`。公开页面不会展示身份复核、范围说明、淘汰原因或“相关资料”等后台过程文案。补充文献保留双语标题、作者、期刊、日期和网页来源链接。
