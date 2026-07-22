@@ -1,2 +1,4 @@
 .DS_Store
 *.tmp
+# main只维护处理代码；完整public成品属于pages-data分支。
+/public/

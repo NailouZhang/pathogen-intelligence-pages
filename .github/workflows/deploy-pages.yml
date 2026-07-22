@@ -1,12 +1,19 @@
-name: Deploy Pathogen Intelligence Pages v17.4
+name: Deploy Pathogen Intelligence Pages v17.4-r4
 
 on:
+  repository_dispatch:
+    types: [pages-data-updated]
+  workflow_dispatch:
+    inputs:
+      source_branch:
+        description: Machine-owned static-data branch to deploy
+        required: false
+        default: pages-data
+        type: string
   push:
     branches: [main]
     paths:
-      - "public/**"
       - ".github/workflows/deploy-pages.yml"
-  workflow_dispatch:
 
 permissions:
   contents: read
@@ -18,14 +25,42 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  validate:
+  deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v6
+      - name: Resolve machine-owned data branch
+        id: source
+        shell: bash
+        env:
+          DISPATCH_BRANCH: ${{ github.event.client_payload.branch }}
+          INPUT_BRANCH: ${{ inputs.source_branch }}
+        run: |
+          set -Eeuo pipefail
+          BRANCH="${DISPATCH_BRANCH:-${INPUT_BRANCH:-pages-data}}"
+          [[ "$BRANCH" != main ]] || {
+            echo "::error::Generated Pages data must never be deployed from main."
+            exit 2
+          }
+          [[ "$BRANCH" =~ ^[A-Za-z0-9._/-]+$ ]] || {
+            echo "::error::Invalid source branch: $BRANCH"
+            exit 2
+          }
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout generated static data
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ steps.source.outputs.branch }}
+          fetch-depth: 1
+
       - name: Validate public-only static tree
         shell: bash
         run: |
           set -Eeuo pipefail
+          test -f .pages-data-branch
           test -s public/index.html
           python - <<'PY'
           from pathlib import Path
@@ -47,20 +82,14 @@ jobs:
           print("PUBLIC_TREE_OK")
           PY
 
-  deploy:
-    needs: validate
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v6
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+
       - name: Upload static artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: public
+
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

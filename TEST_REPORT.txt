@@ -1,6 +1,0 @@
-Pathogen Intelligence Pages v17.4 验证报告
-- 公开仓仅保存静态白名单：PASS
-- deploy-pages工作流YAML：PASS
-- 相关非目标补充卡范围说明：PASS
-- 补充卡无摘要/五七要素深度越界：PASS
-- 多语种原始标题元数据审计：PASS

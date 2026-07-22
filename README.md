@@ -1,3 +1,10 @@
-# Pathogen Intelligence Pages v17.4-r3
+# Pathogen Intelligence Pages v17.4-r4
 
-本仓库只保存 Factory 生成的公开静态站点及自身 `deploy-pages.yml`。公开页面不会展示身份复核、范围说明、淘汰原因或“相关资料”等后台过程文案。补充文献保留双语标题、作者、期刊、日期和网页来源链接。
+本公开仓采用双分支职责隔离：
+
+- `main`：仅保存本仓 README、`.gitignore` 和 `.github/workflows/deploy-pages.yml` 等处理代码与配置；
+- `pages-data`：由 Factory 自动维护，仅保存 `.pages-data-branch` 与 `public/` 静态成品。
+
+Factory 将完整公开站点推送到 `pages-data`，随后发送 `pages-data-updated` 仓库调度事件。默认分支 `main` 上的部署工作流检出 `pages-data/public`，完成静态安全审计并部署到 GitHub Pages。
+
+不得把自动生成的 `public/profiles/`、`public/portal.json` 或 `public/index.html` 提交回 `main`。这可避免工程更新与在线成品在同一分支发生修改/删除冲突。
