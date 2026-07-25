@@ -180,12 +180,32 @@
     "cover": "profiles/arenaviridae/assets/cover.jpg"
   },
   {
+    "profile_id": "human_enterovirus",
+    "name_zh": "人肠道病毒",
+    "name_en": "Human enteroviruses",
+    "issue_date": "2026-07-26",
+    "papers": 7,
+    "news": 5,
+    "day": "sunday",
+    "cover": "profiles/human_enterovirus/assets/cover.jpg"
+  },
+  {
+    "profile_id": "human_adenovirus",
+    "name_zh": "人腺病毒",
+    "name_en": "Human adenoviruses",
+    "issue_date": "2026-07-26",
+    "papers": 7,
+    "news": 0,
+    "day": "sunday",
+    "cover": "profiles/human_adenovirus/assets/cover.jpg"
+  },
+  {
     "profile_id": "rabies_virus",
     "name_zh": "狂犬病病毒",
     "name_en": "Rabies virus",
-    "issue_date": "2026-07-19",
-    "papers": 16,
-    "news": 45,
+    "issue_date": "2026-07-26",
+    "papers": 12,
+    "news": 27,
     "day": "sunday",
     "cover": "profiles/rabies_virus/assets/cover.jpg"
   }
