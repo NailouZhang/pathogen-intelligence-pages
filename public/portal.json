@@ -183,9 +183,9 @@
     "profile_id": "human_enterovirus",
     "name_zh": "人肠道病毒",
     "name_en": "Human enteroviruses",
-    "issue_date": "2026-09-27",
-    "papers": 8,
-    "news": 4,
+    "issue_date": "2026-10-04",
+    "papers": 4,
+    "news": 2,
     "day": "sunday",
     "cover": "profiles/human_enterovirus/assets/cover.jpg"
   },
@@ -193,9 +193,9 @@
     "profile_id": "human_adenovirus",
     "name_zh": "人腺病毒",
     "name_en": "Human adenoviruses",
-    "issue_date": "2026-09-27",
-    "papers": 14,
-    "news": 2,
+    "issue_date": "2026-10-04",
+    "papers": 11,
+    "news": 1,
     "day": "sunday",
     "cover": "profiles/human_adenovirus/assets/cover.jpg"
   },
@@ -203,9 +203,9 @@
     "profile_id": "rabies_virus",
     "name_zh": "狂犬病病毒",
     "name_en": "Rabies virus",
-    "issue_date": "2026-09-27",
-    "papers": 19,
-    "news": 14,
+    "issue_date": "2026-10-04",
+    "papers": 33,
+    "news": 23,
     "day": "sunday",
     "cover": "profiles/rabies_virus/assets/cover.jpg"
   }
